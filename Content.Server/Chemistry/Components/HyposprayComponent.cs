@@ -1,4 +1,5 @@
 using Content.Shared.Chemistry.Components;
+using Content.Shared.DoAfter;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Audio;
 
@@ -24,5 +25,8 @@ namespace Content.Server.Chemistry.Components
         /// </summary>
         [DataField("onlyMobs")]
         public bool OnlyMobs = true;
+    }
+    public sealed partial class HyposprayDoAfterEvent : SimpleDoAfterEvent
+    {
     }
 }
